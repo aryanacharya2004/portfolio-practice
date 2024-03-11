@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 33%;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+
+  /* background-color: rgb(0, 0, 0); */
+}
+.nav-list {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.266);
+}
+
+.rightNav {
+  /* background-color: blue; */
+  width: 30%;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  padding: 0 23px;
+}
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 9px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url("../images/header.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 50%;
+  height: 80%;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.firstsection {
+  height: 100vh;
+}
+
+.firsthalf {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.secondhalf {
+  width: 30%;
+}
+
+.secondhalf img {
+  width: 300px;
+  height: 320px;
+  padding: 4px 0;
+  border: 0px solid white;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 36px;
+}
+.text-small {
+  font-size: 18pxpx;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 8px 2px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 20px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 3px 10px;
+  /* margin: 8px 2px;
+        border: 2px solid white;
+        border-radius: 8px;
+       
+        background: none;
+        color: white;
+        cursor: pointer; */
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.btn-dark {
+  color: black;
+  border: 2px solid black;
+  padding: 9px 16px;
+  margin: 4px 21px;
+}
+
+.section {
+  padding: 70px;
+  /* height: 500px; */
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 70%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* align-items: center; */
+}
+
+.section img {
+  width: 300px;
+  height: 320px;
+  padding: 4px 0px;
+  border: 0px solid white;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.paras {
+  padding: 0px 65px;
+}
+
+.section-tag {
+  padding: 16px 0;
+}
+.section-subtag {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact {
+  height: 100vh;
+  margin: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form {
+  max-width: 450px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-input {
+  margin: 14px;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 2px solid grey;
+  border-radius: 6px;
+}
+
+.text-footer {
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+  display: none;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .navbar {
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+    /* height: 400px; */
+    /* height: 470px; */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .rightNav {
+    text-align: center;
+  }
+
+  #search {
+    width: 100%;
+  }
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  /* .height-nav{
+        height:72px;
+    } */
+
+  .v-class {
+    opacity: 0;
+    display: none;
+  }
+  .text-small {
+    text-align: center;
+  }
+  .text-big {
+    text-align: center;
+  }
+  .btn {
+    text-align: center;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .paras {
+    padding: 1px;
+  }
+}
