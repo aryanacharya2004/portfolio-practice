@@ -73,17 +73,19 @@
       </div>
     </section>
     <hr>
-    <section class="contact">
+  <section class="contact">
         <h2 class="text-center">Contact Us</h2>
         <div class="form">
-            <input class="form-input" type="text" name="name"  placeholder="enter your name" id="name">
-            <input class="form-input" type="tel" name="phone"  placeholder="enter your phone" id="name">
-            <input class="form-input" type="email" name="email"  placeholder="enter your email" id="name">
-            <textarea  class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea>
-            <button class="btn btn-dark ">Submit</button>
+          <form action="https://formspree.io/f/mgegzpky"
+          method="POST">
+            <input class="form-input" type="text" name="name"  placeholder="enter your name" id="name" required>
+            <input class="form-input" type="tel" name="phone"  placeholder="enter your phone" id="name" required>
+            <input class="form-input" type="email" name="email"  placeholder="enter your email" id="name" required>
+            <textarea  class="form-input" name="message" id="text" cols="30" rows="10" placeholder="Ellaborate your concern" required></textarea>
+            <button class="btn btn-dark " type="submit">Submit</button>
+          </form>
         </div>
     </section>
-
     <footer class="background">
         <p class="text-footer">
         copyright &copy; 2027 All rights reserved
